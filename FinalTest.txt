@@ -1,0 +1,153 @@
+POST:- http://localhost:7070/test_project/user
+
+{
+	"username":"virsingh@gmail",
+	"password":"12345"
+}
+response
+{
+	status:success
+}
+
+-------------------------------------------------------------------------------------------
+
+GET:- http://localhost:7070/test_project/admin/modules
+
+[
+    {
+        "id": 101,
+        "name": "OOPs with C++ Programming",
+        "desc": "Revision of C Programming, Pointers, Functions",
+        "totalhours": 60
+    },
+    {
+        "id": 102,
+        "name": "Algorithm & Data Structures",
+        "desc": "Introduction to trees, Abstract trees, Tree traversals, Binary trees, Search trees",
+        "totalhours": 70
+    }
+]
+--------------------------------------------------------------------------------------------------
+GET:-http://localhost:7070/test_project/admin/faculty
+
+[
+    {
+        "id": 10,
+        "username": "kishori@gmail.com",
+        "name": "Kishori",
+        "rating": 4,
+        "experience": 15,
+        "lab": false
+    },
+    {
+        "id": 11,
+        "username": "madhura@gmail.com",
+        "name": "Madhura",
+        "rating": 5,
+        "experience": 12,
+        "lab": false
+    }
+]
+-----------------------------------------------------------------------------------------------------
+GET:- http://localhost:7070/test_project/admin/faculty/14                //subject associated with
+O/p-
+
+[
+    {
+        "id": 121,
+        "name": "Core Java",
+        "desc": "aptitude and english",
+        "totalhours": 70
+    },
+    {
+        "id": 122,
+        "name": "Advance Java",
+        "desc": "aptitude and english",
+        "totalhours": 90
+    }
+]
+--------------------------------------------------------------------------------------------------------
+GET:- http://localhost:7070/test_project/admin/calendar
+
+[
+    {
+        "cal_id": 2019101,
+        "db_date": "2019-01-01",
+        "year": 2019,
+        "month": 1,
+        "day": 1,
+        "quarter": 1,
+        "week": 1,
+        "day_name": "Tuesday",
+        "month_name": "January",
+        "holiday_flag": "t",
+        "weekend_flag": "f",
+        "event": null
+    },
+    {
+        "cal_id": 2019102,
+        "db_date": "2019-01-02",
+        "year": 2019,
+        "month": 1,
+        "day": 2,
+        "quarter": 1,
+        "week": 1,
+        "day_name": "Wednesday",
+        "month_name": "January",
+        "holiday_flag": "f",
+        "weekend_flag": "f",
+        "event": null
+    },
+ ]
+------------------------------------------------------------------------------------------------------------
+POST:- http://localhost:7070/test_project/admin/calendar/{id}                ///to add dates
+
+i/p-->[2019201,2019202]            //year*100+month*10+day
+o/p-->( status : success }
+
+-----------------------------------------------------------------------------------------------------------
+
+GET- http://.../test_project/faculty             //list of subjects
+[
+    {
+        "id": 101,
+        "name": "OOPs with C++ Programming",
+        "desc": "Revision of C Programming, Pointers, Functions",
+        "totalhours": 60
+    },
+    {
+        "id": 102,
+        "name": "Algorithm & Data Structures",
+        "desc": "Introduction to trees, Abstract trees, Tree traversals, Binary trees, Search trees",
+        "totalhours": 70
+    }
+]
+
+--------------------------------------------------------------------------------------------------------------
+POST:- .../faculty/registration
+
+i/p->
+{	
+        "username": "eleen@gmail.com",
+	
+        "name": "eleen",
+        "rating": 4,
+        "experience": 15,
+        "lab": false,
+	"modules": [109,120]
+    }
+o/p->{ status: success} or {status : present}
+
+-------------------------------------------------------------------------------------------------------------
+POST:- .../moduleadd/{facultyId}                //to add list of modules to a particular faculty
+
+
+i/p-> [109,120]
+o/p-> success
+
+-------------------------------------------------------------------------------------------------------------
+POST:- .../availability/{id}
+i/p-[2019201,2019202] 
+o/p->success
+--------------------------------------------------------------------------------------------------------------
+
