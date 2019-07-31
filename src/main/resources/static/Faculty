@@ -1,0 +1,39 @@
+
+insert into faculty_info values(10,15,"Kishori","12345","kishori@gmail.com",b'0',4);
+insert into faculty_info values(11,12,"Madhura","12345","madhura@gmail.com",b'0',5);
+insert into faculty_info values(12,13,"Vaibhav","12345","vaibhav@gmail.com",b'0',5);
+insert into faculty_info values(13,10,"Vishal","12345","vishal@gmail.com",b'0',4);
+insert into faculty_info values(14,5,"Kaushal","12345","kaushal@gmail.com",b'0',4);
+insert into faculty_info values(15,10,"Swati","12345","swati@gmail.com",b'0',3);
+insert into faculty_info values(16,1,"Raman","12345","raman@gmail.com",b'0',3);
+insert into faculty_info values(17,2,"Vikram","12345","vikram@gmail.com",b'1',4);
+insert into faculty_info values(18,1,"Nana Patekar","12345","nanapatekar@gmail.com",b'1',5);
+insert into faculty_info values(19,2,"Viplav","12345","viplav@gmail.com",b'1',3);
+insert into faculty_info values(20,3,"Monali","12345","monali@gmail.com",b'1',3);
+insert into faculty_info values(21,4,"Mukul","12345","anjali@gmail.com",b'1',4);
+insert into faculty_info values(22,5,"Saurabh Walvekar","12345","saurabhwalvekar@gmail.com",b'0',5);
+insert into faculty_info values(23,6,"Sakshi","12345","sakshi@gmail.com",b'0',3);
+insert into faculty_info values(24,7,"Mohak","12345","mohak@gmail.com",b'1',4);
+insert into faculty_info values(25,8,"Sanjana","12345","sanjana@gmail.com",b'1',4);
+insert into faculty_info values(26,8,"Patel Suresh","12345","patel@gmail.com",b'1',4);
+insert into faculty_info values(27,10,"Himesh","12345","himesh@gmail.com",b'0',3);
+insert into faculty_info values(28,10,"Bafna Sir","12345","bafna@gmail.com",b'1',3);
+insert into faculty_info values(29,10,"Jitesh Sir","12345","jitesh@gmail.com",b'1',3);
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+insert into modules_info values(101,"Revision of C Programming, Pointers, Functions","OOPs with C++ Programming",60);
+insert into modules_info values(102,"Introduction to trees, Abstract trees, Tree traversals, Binary trees, Search trees","Algorithm & Data Structures",70);
+insert into modules_info values(103,"Cloud,Introduction to Virtualization,Containerisation ,Cloud Computing, Cloud SPI Model, Cloud Computing Types, Cloud Security,Virtualization,","Advanced Software Development Methodologies",90);
+insert into modules_info values(104,"Linux Commands, Vi editor, Shell Scripting, Overview of OS, Processes, Scheduling & Synchronization, Memory management, File Systems","Operating Systems Concepts",60);
+insert into modules_info values(105,"HTML 5:Elements ,Objects ,Events ,Canvas,Audio & Video Support,Geo-location Support","Advanced Web Programming",50);
+insert into modules_info values(106,"Object Oriented Programming: Method, Constructor, Inheritance, Encapsulation, Abstraction, Polymorphism,Javascript Validations,Document Object Model, Document and Events (DOM Manipulation), Security in Java Script","MEAN Stack",50);
+insert into modules_info values(107,"Database Concepts: Client/Server Computing,RDBMS Technologies,Codd’s Rules,Data Models,Normalization Techniques,ER Diagrams","Database Technologies",60);
+insert into modules_info values(108,"C# .NET 4.5: Need of C#,Operators,Namespaces & Assemblies,Arrays,Preprocessors,Delegates","Microsoft.Net Technologies",60);
+insert into modules_info values(109,"english","Effective Communication",50);
+insert into modules_info values(120,"aptitude and english","Aptitude",50);
+insert into modules_info values(121,"aptitude and english","Core Java",70);
+insert into modules_info values(122,"aptitude and english","Advance Java",90);

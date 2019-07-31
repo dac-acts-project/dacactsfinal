@@ -1,0 +1,11 @@
+insert into common_login values("rahul1","1234","admin");
+insert into common_login values("varsha","1234","faculty");
+insert into common_login values("papa","1234","scheduler");
+insert into common_login values("sanjoo","1234","faculty");
+
+
+
+insert into faculty_info values(5,2,"madhura","12345","madhura@gmail",0,5);
+insert into faculty_info values(6,1,"kishori","12345","kishori@gmail",0,5);
+insert into faculty_info values(7,2,"ganesh","12345","ganesh@gmail",0,5);
+insert into faculty_info values(8,4,"swati","12345","swati@gmail",0,5);
